@@ -1,9 +1,9 @@
 services:
   # A Docker web service
   - type: web
-    name: alist
+    name: index
     env: docker
-    repo: https://github.com/alist-org/alist-render.git # optional
+    repo: 
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     healthCheckPath: /
@@ -29,8 +29,8 @@ services:
         # value: db_name
         sync: false
       - key: DB_TABLE_PREFIX
-        # value: alist_
+  
         sync: false
       - key: CDN
-        # value: https://npm.elemecdn.com/alist-web@$version/dist
+       
         sync: false
